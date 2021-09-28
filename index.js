@@ -82,3 +82,4 @@ for(var i = 0; i < highScores.length; i++ ){
   var currentHighscorePerson = highScores[i]
   console.log(currentHighscorePerson.name + "   " + currentHighscorePerson.score)
 }
+console.log(chalk.bold.green("if your score is above these people send me teh screenshot i will update in database"));
