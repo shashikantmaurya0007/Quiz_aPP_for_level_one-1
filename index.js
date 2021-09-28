@@ -2,7 +2,7 @@
 var input = require('readline-sync');
 var chalk=require('chalk');
 console.log(chalk.blue.bold("Welcome to the game called\nHow well do you know shashi?"));
-alert("please write the whole option as answer not the 'a,b,c,d'");
+input.question(chalk.red("!!please write the whole option as answer not the 'a,b,c,d'!!");
 var shashi=[{
   question:"Which place shashi was born?",
   options:["a.Ranchi", "b.Kolkata","c.Bihar","d.Mumbai"],
