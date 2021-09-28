@@ -3,6 +3,16 @@ var input = require('readline-sync');
 var chalk=require('chalk');
 console.log(chalk.blue.bold("Welcome to the game called\nHow well do you know shashi?"));
 console.log(chalk.red("!!please write the whole option as answer not the 'a,b,c,d'!!"));
+var highScores = [
+  {
+    name: "rahul",
+    score: 3
+  },
+  {
+    name: "ravi",
+    score: 2
+  }
+]
 var shashi=[{
   question:"Which place shashi was born?",
   options:["a.Ranchi", "b.Kolkata","c.Bihar","d.Mumbai"],
@@ -67,3 +77,8 @@ for(var i=0;i<shashi.length;i++)
 quiz();
 console.log('your score after this game :->'+chalk.bold.green(score))
 console.log(chalk.bold.red("you know ")+chalk.blue.green(score/(shashi.length+1)*100)+chalk.bold.red("% of shashi"));
+console.log("--- High scores Board ----")
+for(var i = 0; i < highScores.length; i++ ){
+  var currentHighscorePerson = highScores[i]
+  console.log(currentHighscorePerson.name + "   " + currentHighscorePerson.score)
+}
